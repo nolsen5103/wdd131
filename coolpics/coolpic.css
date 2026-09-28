@@ -25,13 +25,13 @@ h2{
 }
 
 nav{
-    display: flex;
+    display: none;
     justify-content: center;
     gap: 3rem;
     margin-top: 1rem;
 }
 
-nav a {
+nav a{
     color: white;
     text-decoration: none;
 }
@@ -55,6 +55,14 @@ footer{
     padding: 1rem;
     margin-top: 2rem;
 }
+#menu {
+    cursor: pointer;
+    display: block;
+    margin: 1rem auto;
+    color: white;
+    background-color: rgb(73, 73, 195);
+    border: none;
+}
 
 @media screen and (min-width: 700px) {
     .gallery {
@@ -65,5 +73,14 @@ footer{
 @media screen and (min-width: 1000px) {
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    #menu {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 1rem;
     }
 }
