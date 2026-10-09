@@ -3,7 +3,7 @@
 
 body {
   margin: 0;
-  padding: 0;  
+  padding: 0;
   font-family: Roboto, sans-serif;
 }
 header,
@@ -27,7 +27,13 @@ section {
 nav a {
     padding: 20px;
     color: black;
-    display: none;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-top: 1px solid grey;
+}
+.hide{
+    display:none;
 }
 nav a:hover {
     text-decoration: none;
@@ -43,16 +49,26 @@ nav a:hover {
     height: 4px;
     background-color: black;
     margin: 5px 0;
+    transition: 0.4s;
 }
+
+.change .bar1 {
+  transform: translate(0, 8.5px) rotate(-45deg);
+}
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  transform: translate(0, -8.5px) rotate(45deg);
+}
+          
 footer {
     text-align: center;
 }
-  
 @media screen and (min-width: 700px) {
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
+    }  
     .menu-btn {
         display: none;
     }
@@ -64,10 +80,9 @@ footer {
     }
 }
 
-
 @media screen and (min-width: 1000px) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
-          
+                       
