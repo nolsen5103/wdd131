@@ -1,0 +1,102 @@
+:root {
+  --primary: #174a70;
+  --accent: #f2a900;
+  --background: #eef4f8;
+  --white: #ffffff;
+  --error: #a00000;
+  --success: #075c37;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background: var(--background);
+  color: #222;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  width: min(100%, 30rem);
+  max-width: 30rem;
+  padding: 2rem;
+  background: var(--white);
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 15%);
+}
+
+h1 {
+  margin-top: 0;
+  color: var(--primary);
+  text-align: center;
+}
+
+form {
+  display: grid;
+  gap: 0.5rem;
+}
+
+label {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  min-height: 2.5rem;
+  padding: 0.5rem;
+  font: inherit;
+}
+
+button {
+  margin-top: 1rem;
+  border: 0;
+  border-radius: 0.25rem;
+  background: var(--primary);
+  color: var(--white);
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background: #0d3049;
+}
+
+.hidden {
+  display: none;
+}
+
+.error,
+.success {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+}
+
+.error {
+  border: 1px solid var(--error);
+  background: #fff0f0;
+  color: var(--error);
+}
+
+.success {
+  border: 1px solid var(--success);
+  background: #edfff6;
+  color: var(--success);
+}
+
+.error h2,
+.success h2 {
+  margin-top: 0;
+}
+
+.error li {
+  margin-bottom: 0.35rem;
+}
