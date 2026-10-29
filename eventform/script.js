@@ -6,7 +6,7 @@ const detailsInput = document.querySelector("#details-input");
 const messages = document.querySelector("#messages");
 const dateInput = document.querySelector("#date");
 
-// Prevent the user from selecting today or an earlier date.
+
 const tomorrow = new Date();
 tomorrow.setDate(tomorrow.getDate() + 1);
 const year = tomorrow.getFullYear();
