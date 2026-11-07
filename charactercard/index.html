@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A JavaScript object character card for a fantasy adventurer.">
+  <meta property="og:title" content="Character Card | JavaScript Object">
+  <meta property="og:description" content="View a character's class, level, and health.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="snortleblat.webp">
+  <title>Character Card | JavaScript Object</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>Character Card</h1>
+
+    <section class="card" aria-labelledby="character-name">
+      <div class="card-image-wrap">
+        <img id="character-image" src="snortleblat.webp" alt="Fantasy lizard character standing in a swamp">
+      </div>
+
+      <div class="card-content">
+        <h2 id="character-name"></h2>
+        <p id="character-class" class="character-class"></p>
+
+        <dl class="stats">
+          <div>
+            <dt>Level</dt>
+            <dd id="character-level"></dd>
+          </div>
+          <div>
+            <dt>Health</dt>
+            <dd><span id="character-health"></span><span aria-hidden="true"> / 100</span></dd>
+          </div>
+        </dl>
+
+        <div class="actions">
+          <button id="level-up" type="button">Level Up</button>
+          <button id="attack" class="danger" type="button">Attacked</button>
+        </div>
+        <p id="status" class="status" role="status"></p>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
