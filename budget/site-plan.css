@@ -181,11 +181,11 @@ nav a:hover {
 }
 
 .wireframe {
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
 .logo {
-    width: 50%;
+    width: 25%;
     height: auto;
 }
