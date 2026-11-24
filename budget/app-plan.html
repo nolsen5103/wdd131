@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8" />
+		<title>Site Plan</title>
+		<link type="text/css" rel="stylesheet" href="site-plan.css" />
+	</head>
+
+	<body>
+		<header>
+			<h1>Budget Buddy Project Plan</h1>
+			<h2>Nicholas Olsen</h2>
+			<h2>WDD 131-A1</h2>
+			<!-- In the header above, add the name or your site, your name and class number. For example if you are in section 3 you would put WDD 131.03 -->
+		</header>
+		<main>
+			
+			<hr />
+			<h2>Overview</h2>
+			<h3>Purpose</h3>
+			<p>The Budget Buddy personal budget planner helps users track income and expenses, organize spending by category, and see whether they are staying within their budget. The site can provide a simple visual summary of spending and alert users when they are close to and/or over their budget.</p>
+			<!-- change this -->
+
+			<h3>Audience</h3>
+			<p>The target audience for this budget planner are individuals who generally want to learn financial responsibility or reduce unnecessary spending. I also want the tool to be helpful for college students who need to manage a limited income.</p>
+			<!-- change this -->
+
+			<h3>Dynamic elements</h3>
+			<p>Some dynamic elements I will implement will include but are not limited to: Event listeners (such as button clicks), conditional branching (showing different messages based on remaining balance), objects (expenses stored as objects), and arrays (Storing expenses in an expenses array), </p>
+			<!-- change this -->
+
+			<hr />
+			<h2>Branding</h2>
+			<h3>Website Logo</h3>
+			<!-- Replace this with some sort of logo for your site.  A logo can be as simple as the name of your site in a nice font :) -->
+			<img src="logo.svg" alt="Logo image" class="logo"/>
+			<hr />
+			<h2>Style Guide</h2>
+
+			<h3>Color Palette</h3>
+			<!--  The colors you choose for a website are one of the most important decisions you will make. Follow the instructions on the activity in iLearn then return and replace the color codes below with the hex color codes (the 6 digit numbers that show at the bottom of each color) for the colors you have chosen below.  You should have at least 2 colors but do not have to fill in all 4 if you do not need them.  -->
+
+			<!-- Copy and paste the URL to your finished palette below Make sure to paste it into both spots -->
+			Palette URL:
+			<a
+				href="https://coolors.co/17324d-2e8b67-f2b84b-e87561-f5f7fa"
+				target="_blank"
+				>https://coolors.co/17324d-2e8b67-f2b84b-e87561-f5f7fa</a
+			>
+
+			<table class="colors">
+				<tbody>
+					<tr>
+						<th>Navy Blue</th>
+						<th>Green</th>
+						<th>Gold</th>
+						<th>Light Red</th>
+					</tr>
+					<!-- Replace the numbers in the boxes below with your hex color codes. Then switch to the site-plan.css file and change your colors there as well. -->
+					<tr>
+						<td class="primary">[#17324D]</td>
+						<td class="secondary">[#2E8B67]</td>
+						<td class="accent1">[#F2B84B]</td>
+						<td class="accent2">[#E87561]</td>
+					</tr>
+				</tbody>
+			</table>
+
+			
+
+			<h3>Pseudocode for your project</h3>
+
+			<p>
+                START
+
+                Create an empty expenses array
+
+                Select:
+                    income input
+                    budget input
+                    expense form
+                    expense list
+                    category filter
+                    total income display
+                    total expenses display
+                    remaining balance display
+                    budget message
+
+                WHEN the user submits the income form:
+                    Get the income amount
+                    Store the income amount
+                    Update the summary
+
+                WHEN the user submits the expense form:
+                    Get the expense name, amount, category, and date
+                    Create an expense object
+                    Add the object to the expenses array
+                    Display the updated expense list
+                    Recalculate total expenses
+                    Update the remaining balance
+
+                To calculate total expenses:
+                    Add all expense amounts using reduce()
+
+                To calculate remaining balance:
+                    Subtract total expenses from income
+
+                IF remaining balance is greater than zero:
+                    Display "You are within your budget"
+
+                ELSE IF remaining balance equals zero:
+                    Display "You have reached your budget"
+
+                ELSE:
+                    Display "You are over budget"
+
+                WHEN the user selects a category:
+                    Filter the expenses array by category
+                    Display only matching expenses
+
+                WHEN the user clicks delete:
+                    Remove the selected expense from the expenses array
+                    Update the expense list and summary
+
+                WHEN the user clicks reset:
+                    Clear the expenses array
+                    Clear the form fields
+                    Reset all totals
+
+                END
+			</p>
+
+			<h3>Wireframes</h3>
+            <p>Included in this image are the wireframes for the desktop version (left) and the mobile version (right).</p>
+			<img src="wireframe.png" alt="home page wireframe"/ class="wireframe">
+		</main>
+	</body>
+</html>
